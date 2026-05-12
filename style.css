@@ -148,10 +148,10 @@ main {
 #right {
   height: 95vh;
   width: 45%;
-  border: 2px solid black;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: -5rem;
 }
 #left {
   height: 90vh;
@@ -160,4 +160,66 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+#icon {
+  height: 3rem;
+  width: 10rem;
+  border: 2px solid black;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 1.5rem;
+  margin-bottom: 1em;
+}
+#icon > span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #219ebc;
+}
+.fa-solid {
+  color: #000;
+}
+#slogan {
+  font-size: 30px;
+  font-weight: 900;
+  text-shadow: 0 0 1px currentColor;
+}
+#para {
+  font-size: 15px;
+  color: #111;
+}
+#para #wishes {
+  font-weight: bolder;
+}
+#btn button {
+  height: 3.4rem;
+  width: 10rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.05em;
+  font-weight: bold;
+  display: flex;
+  gap: 2.5px;
+  justify-content: center;
+  align-items: center;
+}
+#btn {
+  margin-top: 25px;
+  display: flex;
+  gap: 1em;
+}
+#science {
+  background-color: #000;
+  color: #bde0fe;
+}
+#science i {
+  color: #bde0fe;
+}
+#science:hover {
+  transform: translateY(-1.5px);
+}
+#management:hover {
+  background-color: #c0dcf5;
+  transform: translateY(-1.5px);
 }
