@@ -4,7 +4,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
+section {
+  scroll-margin-top: 100px;
+}
 .navbar {
   height: 10vh;
   width: 100%;
@@ -46,7 +52,7 @@
   background: linear-gradient(
     90deg,
     #0004ff 0%,
-    #ffffff 20%,
+    #6cd1ed 20%,
     #3a7bd5 40%,
     #00d2ff 60%,
     #3a7bd5 80%,
@@ -74,11 +80,13 @@
   transform: translateY(-1px);
 }
 
+.nav-element a.active {
+  background-color: #bde0fe;
+  color: #2563eb;
+}
 @media (max-width: 768px) {
   .navbar {
     flex-direction: row;
-    padding: 1rem;
-    gap: 1rem;
     height: auto;
   }
 
@@ -91,21 +99,65 @@
   }
   .logo span {
     flex-wrap: nowrap;
-    font-size: clamp(12px, 2vw, 18px);
+    font-size: clamp(12px, 1.5vw, 15px);
   }
   .nav-element {
     width: 100%;
     margin-right: 0;
     height: auto;
     justify-content: center;
-    font-size: clamp(12px, 2vw, 18px);
-    flex-wrap: nowrap;
-    gap: 0.5rem;
   }
 
   .nav-element a {
     font-size: 14px;
     padding: 0.4rem 0.8rem;
     flex-wrap: nowrap;
+    font-size: clamp(12px, 1.5vw, 15px);
   }
+}
+main {
+  height: 100vh;
+  width: 100%;
+  background:
+    radial-gradient(
+      circle at 68% 45%,
+      rgba(255, 255, 255, 0.85) 0%,
+      rgba(255, 255, 255, 0.45) 18%,
+      rgba(255, 255, 255, 0.08) 35%,
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at top left,
+      rgba(72, 149, 239, 0.35) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(67, 97, 238, 0.2) 0%,
+      transparent 45%
+    ),
+    linear-gradient(135deg, #eef5ff 0%, #e6f0ff 30%, #dbeafe 65%, #f8fbff 100%);
+}
+#home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#right {
+  height: 95vh;
+  width: 45%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#left {
+  height: 90vh;
+  width: 35%;
+  background-image: url(image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
