@@ -200,7 +200,7 @@ main {
   font-size: 1.05em;
   font-weight: bold;
   display: flex;
-  gap: 2.5px;
+  gap: 7px;
   justify-content: center;
   align-items: center;
 }
@@ -216,10 +216,23 @@ main {
 #science i {
   color: #bde0fe;
 }
+#management {
+  border: 2px solid #fff;
+}
 #science:hover {
+  box-shadow: 0 8px 15px rgba(0, 210, 255, 0.5);
   transform: translateY(-1.5px);
 }
 #management:hover {
   background-color: #c0dcf5;
   transform: translateY(-1.5px);
+  box-shadow: 0 8px 15px rgba(0, 210, 255, 0.5);
+}
+#science:active {
+  transform: scale(0.99);
+  box-shadow: 0 4px 8px rgba(0, 210, 255, 0.3);
+}
+#management:active {
+  transform: scale(0.99);
+  box-shadow: 0 4px 8px rgba(0, 210, 255, 0.3);
 }
