@@ -84,39 +84,9 @@ section {
   background-color: #bde0fe;
   color: #2563eb;
 }
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: row;
-    height: auto;
-  }
 
-  .logo {
-    width: auto;
-    margin-left: 0;
-    padding: 0;
-    text-align: center;
-    flex-wrap: nowrap;
-  }
-  .logo span {
-    flex-wrap: nowrap;
-    font-size: clamp(12px, 1.5vw, 15px);
-  }
-  .nav-element {
-    width: 100%;
-    margin-right: 0;
-    height: auto;
-    justify-content: center;
-  }
-
-  .nav-element a {
-    font-size: 14px;
-    padding: 0.4rem 0.8rem;
-    flex-wrap: nowrap;
-    font-size: clamp(12px, 1.5vw, 15px);
-  }
-}
 main {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background:
     radial-gradient(
@@ -139,7 +109,7 @@ main {
     linear-gradient(135deg, #eef5ff 0%, #e6f0ff 30%, #dbeafe 65%, #f8fbff 100%);
 }
 #home {
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -154,7 +124,7 @@ main {
   margin-top: -5rem;
 }
 #left {
-  height: 90vh;
+  height: 95vh;
   width: 35%;
   background-image: url(image.png);
   background-size: cover;
@@ -163,12 +133,11 @@ main {
 }
 #icon {
   height: 3rem;
-  width: 10rem;
+  width: 9rem;
   border: 2px solid black;
   border-radius: 999px;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   padding: 1.5rem;
   margin-bottom: 1em;
 }
@@ -235,4 +204,58 @@ main {
 #management:active {
   transform: scale(0.99);
   box-shadow: 0 4px 8px rgba(0, 210, 255, 0.3);
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .logo {
+    width: auto;
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+
+  .logo span {
+    flex-wrap: nowrap;
+    font-size: clamp(11px, 1.2vw, 13px);
+  }
+  .nav-element {
+    width: 100%;
+    margin-right: 0;
+    height: auto;
+    justify-content: center;
+  }
+
+  .nav-element a {
+    font-size: 10px;
+    padding: 0.2rem 0.4rem;
+    flex-wrap: nowrap;
+    font-size: clamp(11px, 1.2vw, 13px);
+  }
+  #home {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #right {
+    height: 90vh;
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2px 4px 2px 4px;
+  }
+  #left {
+    margin-top: -15px;
+    width: 100%;
+  }
 }
