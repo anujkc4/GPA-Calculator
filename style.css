@@ -205,6 +205,43 @@ main {
   transform: scale(0.99);
   box-shadow: 0 4px 8px rgba(0, 210, 255, 0.3);
 }
+#StreamText {
+  font-size: 28px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+#about {
+  height: 80vh;
+  width: 100%;
+  margin-top: -50px;
+}
+.description {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 10px;
+}
+#calinfo {
+  height: 60vh;
+  width: 45%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  /* font-size: 1; */
+  font-weight: 590;
+}
+#management-stream {
+  height: 20vh;
+  width: 35%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* ---------------------------------------------------------------- */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: row;
@@ -259,3 +296,5 @@ main {
     width: 100%;
   }
 }
+
+/* ----------------------------------------------------------- */
