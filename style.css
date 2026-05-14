@@ -212,7 +212,7 @@ main {
   text-align: center;
 }
 #about {
-  height: 80vh;
+  height: 75vh;
   width: 100%;
   margin-top: -50px;
 }
@@ -229,24 +229,52 @@ main {
   height: 60vh;
   width: 45%;
   background-color: #f8f9fa;
-  border: 2px solid white;
-  border-radius: 10px;
+  border: 2px solid #fff;
+  border-radius: 15px;
   padding: 20px;
   font-weight: 590;
+  box-shadow: 0 4px 12px rgba(0, 140, 255, 0.3);
 }
-#management-stream {
+#formula-box {
   height: 20vh;
   width: 35%;
-  background-color: #e9ecef;
-  border: 2px solid black;
-  border-radius: 10px;
+  background-color: #f8f9fa;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 140, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px;
 }
+
 #lists li {
   list-style: none;
   padding: 12px;
 }
 #lists i {
   color: #219ebc;
+}
+#for-title {
+  height: fit-content;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+#formula {
+  height: 100px;
+  width: 100%;
+  background-color: #e9eaeb;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin-left: 10px;
+  padding: 10px;
+}
+#formula span {
+  font-weight: bold;
+  color: #3a86ff;
 }
 /* ---------------------------------------------------------------- */
 @media (max-width: 768px) {
@@ -301,6 +329,29 @@ main {
   #left {
     margin-top: -15px;
     width: 100%;
+  }
+  #btn {
+    display: flex;
+    justify-content: center;
+  }
+  #about {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #calinfo,
+  #formula-box {
+    height: fit-content;
+    width: 100%;
+  }
+  #formula {
+    padding: 20px;
   }
 }
 
