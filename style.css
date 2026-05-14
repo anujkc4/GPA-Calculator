@@ -289,6 +289,57 @@ main {
   font-weight: bold;
   color: #3a86ff;
 }
+#questions {
+  font-size: 26px;
+  padding: 20px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+#questions::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+  width: 50%;
+  height: 3px;
+  background: #00d2ff;
+  border-radius: 2.5px;
+}
+#faq {
+  height: 60vh;
+  width: 100%;
+}
+.qns-ans {
+  height: fit-content;
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.setofqns {
+  height: 50px;
+  width: 700px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 12px rgba(0, 140, 255, 0.3);
+}
+.questionhru {
+  padding: 12.5px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.answers {
+  display: none;
+}
 /* ---------------------------------------------------------------- */
 @media (max-width: 768px) {
   .navbar {
@@ -365,6 +416,12 @@ main {
   }
   #formula {
     padding: 20px;
+  }
+  .setofqns {
+    width: 100%;
+  }
+  .questionhru {
+    font-size: 12px;
   }
 }
 
