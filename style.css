@@ -369,7 +369,6 @@ main {
 #grading {
   height: auto;
   width: 100%;
-  border: 2px solid black;
 }
 #gradingtext {
   font-size: 26px;
@@ -399,7 +398,6 @@ main {
 }
 .table-container > table {
   border-collapse: collapse;
-  border-radius: 15px;
   width: 75%;
   box-shadow: 0 4px 12px rgba(14, 141, 245, 0.3);
 }
