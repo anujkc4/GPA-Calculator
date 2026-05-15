@@ -564,6 +564,22 @@ td:nth-child(4) {
     font-size: 15px;
     padding: 10px;
   }
+  #contact {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #contact > .calinfo,
+  .quicklink,
+  .contact {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+  .quicklink {
+    display: block;
+  }
 }
 
 /* ----------------------------------------------------------- */
