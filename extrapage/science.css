@@ -1,0 +1,104 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background:
+    radial-gradient(
+      circle at 68% 45%,
+      rgba(255, 255, 255, 0.85) 0%,
+      rgba(255, 255, 255, 0.45) 18%,
+      rgba(255, 255, 255, 0.08) 35%,
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at top left,
+      rgba(72, 149, 239, 0.35) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(67, 97, 238, 0.2) 0%,
+      transparent 45%
+    ),
+    linear-gradient(135deg, #eef5ff 0%, #e6f0ff 30%, #dbeafe 65%, #f8fbff 100%);
+}
+main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px;
+  gap: 25px;
+}
+.top-notice {
+  height: 25vh;
+  width: 80%;
+  background-color: #f8f9fa;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 210, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.calculation {
+  height: 90vh;
+  width: 80%;
+  background-color: #f8f9fa;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 210, 255, 0.5);
+}
+#gotoback {
+  height: 2.5rem;
+  width: 10rem;
+  font-size: 15px;
+  border-radius: 999px;
+  padding: 7.5px;
+  background-color: #bad7f2;
+  color: #fff;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+#gotoback span {
+  margin-left: 5px;
+}
+#calculator {
+  height: auto;
+  width: 40rem;
+  color: #00a6fb;
+}
+
+#calculator span {
+  font-size: 35px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#calculator i {
+  font-size: 35px;
+}
+#calcu-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #219ebc;
+}
+#gotoback:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 210, 255, 0.5);
+  transform: scale(1.05);
+}
+#gotoback:hover i {
+  transform: translateX(-2px);
+}
+#gotoback:active {
+  transform: scale(0.95);
+}
