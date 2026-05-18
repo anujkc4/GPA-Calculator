@@ -1,3 +1,5 @@
+// this part adds active blue nav click effect according to user location
+
 document.querySelectorAll(".questionhru").forEach((question) => {
   question.addEventListener("click", function () {
     const faqBox = this.parentElement;
@@ -55,3 +57,13 @@ function activenavcheck(userLocation) {
     }
   });
 }
+
+// locad page when click in science or management button
+
+document.getElementById("science").addEventListener("click", () => {
+  window.location.href = "./extrapage/science.html";
+});
+
+document.getElementById("management").addEventListener("click", () => {
+  window.location.href = "./extrapage/management.html";
+});
