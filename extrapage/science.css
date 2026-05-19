@@ -5,6 +5,8 @@
   font-family: "Poppins", sans-serif;
 }
 body {
+  height: 100%;
+  width: 100%;
   background:
     radial-gradient(
       circle at 68% 45%,
@@ -102,3 +104,66 @@ main {
 #gotoback:active {
   transform: scale(0.95);
 }
+.nameandstream {
+  height: fit-content;
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e3d5ca;
+  margin: 2rem 0 0 6.5rem;
+}
+#name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #00a6fb;
+}
+#name input {
+  height: 2rem;
+  width: 20rem;
+  border: 2px solid #00a6fb;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#name input:focus {
+  color: #00a6fb;
+  box-shadow: 0 8px 15px rgba(0, 210, 255, 0.5);
+}
+/* ---------------------------------------------------------------- */
+@media (max-width: 768px) {
+  main {
+    height: 100%;
+    width: 100vw;
+    padding: 15px;
+  }
+
+  .top-notice {
+    height: 18vh;
+    width: 100%;
+  }
+  .calculation {
+    width: 100%;
+  }
+  #gotoback {
+    height: 2rem;
+    width: 9rem;
+    font-size: 10px;
+  }
+  #gotoback span {
+    margin-left: 5px;
+  }
+  #calculator {
+    height: auto;
+    width: 100%;
+  }
+  #calculator span {
+    font-size: 22px;
+    font-weight: 900;
+  }
+  #calcu-text {
+    font-size: 12px;
+  }
+}
+
+/* ----------------------------------------------------------- */
