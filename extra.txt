@@ -20,3 +20,8 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+<section class="top-notice">
+      <div id="gotoback">
+        <i class="fa-solid fa-arrow-left"></i><span>Back To Home</span>
+      </div>

@@ -111,9 +111,10 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #e3d5ca;
+  background-color: #e1e6e1;
   margin: 2rem 0 0 6.5rem;
   border-radius: 999px;
+  box-shadow: 0 0 12px rgba(0, 210, 255, 0.5);
 }
 #name {
   font-size: 1em;
@@ -141,7 +142,47 @@ main {
   font-size: 1em;
   font-weight: bold;
 }
-
+.science-table {
+  height: 40vh;
+  width: 70%;
+  border-collapse: collapse;
+  margin: 30px auto;
+  box-shadow: 0 0 12px rgba(0, 210, 255, 0.5);
+}
+.science-table th,
+.science-table td {
+  padding: 15px;
+}
+.science-table thead tr {
+  background-color: #7678ed;
+}
+.science-table tbody tr:nth-child(2),
+tr:nth-child(4),
+tr:nth-child(6) {
+  background-color: #e1e6e1;
+}
+#formSubmit {
+  display: block;
+  margin: 25px auto;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #00bbf9, #0077b6);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 187, 249, 0.3);
+}
+#formSubmit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 187, 249, 0.5);
+}
+#formSubmit:active {
+  transform: translateY(0px);
+  box-shadow: 0 3px 8px rgba(0, 187, 249, 0.3);
+}
 /* ---------------------------------------------------------------- */
 @media (max-width: 768px) {
   main {
